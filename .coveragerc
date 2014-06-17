@@ -1,0 +1,7 @@
+[run]
+branch = True
+source = marconi-specs
+omit = marconi-specs/tests/*,marconi-specs/openstack/*
+
+[report]
+ignore-errors = True
