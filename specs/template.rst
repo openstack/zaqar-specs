@@ -1,7 +1,7 @@
 ..
   This template should be in ReSTructured text. The filename in the git
   repository should match the launchpad URL, for example a URL of
-  https://blueprints.launchpad.net/marconi/+spec/awesome-thing should be named
+  https://blueprints.launchpad.net/zaqar/+spec/awesome-thing should be named
   awesome-thing.rst.
 
   Please do not delete any of the sections in this
@@ -16,7 +16,7 @@
 
 Include the URL of your launchpad blueprint:
 
-https://blueprints.launchpad.net/marconi/+spec/example
+https://blueprints.launchpad.net/zaqar/+spec/example
 
 Introduction paragraph -- why are we doing anything?
 
@@ -75,7 +75,7 @@ but we're mostly trying to understand the timeline for implementation.
 Dependencies
 ============
 
-- Include specific references to specs and/or blueprints in marconi, or in other
+- Include specific references to specs and/or blueprints in zaqar, or in other
   projects, that this one either depends on or is related to.
 
 .. note::

@@ -1,7 +1,7 @@
 [run]
 branch = True
-source = marconi-specs
-omit = marconi-specs/tests/*,marconi-specs/openstack/*
+source = zaqar-specs
+omit = zaqar-specs/tests/*,zaqar-specs/openstack/*
 
 [report]
 ignore-errors = True
