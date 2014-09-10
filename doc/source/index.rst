@@ -16,7 +16,6 @@ zaqar-specs Repository Information
 
    README <readme>
    contributing
-   Sample Template <template>
 
 
 Indices and tables

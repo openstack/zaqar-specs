@@ -31,6 +31,11 @@ extensions = [
 feed_base_url = 'http://specs.openstack.org/openstack/zaqar-specs'
 feed_author = 'OpenStack Zaqar Team'
 
+exclude_patterns = [
+    'template.rst',
+    '**/template.rst',
+]
+
 # Optionally allow the use of sphinxcontrib.spelling to verify the
 # spelling of the documents.
 try:
