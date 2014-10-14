@@ -34,6 +34,16 @@ propose to solve this problem?
 If this is one part of a larger effort make it clear where this piece ends. In
 other words, what's the scope of this effort?
 
+Drawbacks
+---------
+
+Are there any drawbacks in this proposal? Does it change things in the
+API? Will it have an impact in critical areas? Will it make other
+areas more complex?
+
+Please, answer any of the questions above or elaborate on the
+drawbacks of this proposal if there're any.
+
 Alternatives
 ------------
 
