@@ -34,6 +34,15 @@ propose to solve this problem?
 If this is one part of a larger effort make it clear where this piece ends. In
 other words, what's the scope of this effort?
 
+If your specification proposes any changes to the Zaqar REST API such
+as changing parameters which can be returned or accepted, or even
+the semantics of what happens when a client calls into the API, then
+you should add the APIImpact flag to the commit message. Specifications with
+the APIImpact flag can be found with the following query:
+
+https://review.openstack.org/#/q/status:open+project:openstack/zaqar-specs+message:apiimpact,n,z
+
+
 Alternatives
 ------------
 
