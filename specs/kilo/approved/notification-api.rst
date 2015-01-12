@@ -74,18 +74,17 @@ A subscription consists in a object containing the information of the
 source, destination, expiration and a custom field that contains
 information useful for the notifier. ::
 
-    POST /v2/subscription/
+    POST /v2/queues/{queue_name}/subscriptions
 
     {
-        'source': 'my-queue',
-        'publisher': 'webhook',
+        'subscriber': 'http://trigger.me',
         'ttl': 3600,
         'options': {}
     }
 
 * **source**: The source queue for notifications
-* **publisher**: The publisher type. This can be any of the supported
-  publishers and the implementation must be based on stevedore to
+* **subscriber**: The subscriber URI. This can be any of the supported
+  subscriber URI and the implementation must be based on stevedore to
   allow external contributions.
 * **ttl**: time to live for this subscription. It's a positive number
   that expresses, in seconds, how long a subscription should exist. If
