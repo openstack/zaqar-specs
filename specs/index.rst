@@ -9,3 +9,4 @@
    juno/index
    kilo/index
    liberty/index
+   backlog/index
