@@ -6,5 +6,5 @@
    :glob:
    :maxdepth: 2
 
-..   *
+   *
 
