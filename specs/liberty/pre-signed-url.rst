@@ -284,11 +284,6 @@ Assignee(s)
 Primary assignee:
     flaper87
 
-Milestones
-----------
-
-Target Milestone for completion:
-  Liberty-1
 
 Work Items
 ----------
