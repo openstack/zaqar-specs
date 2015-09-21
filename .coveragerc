@@ -4,4 +4,4 @@ source = zaqar-specs
 omit = zaqar-specs/tests/*,zaqar-specs/openstack/*
 
 [report]
-ignore-errors = True
+ignore_errors = True
