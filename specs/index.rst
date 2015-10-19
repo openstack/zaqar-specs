@@ -10,3 +10,4 @@
    kilo/index
    liberty/index
    backlog/index
+   mitaka/index
