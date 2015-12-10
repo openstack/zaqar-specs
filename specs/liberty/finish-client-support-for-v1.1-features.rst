@@ -10,7 +10,7 @@ the client side. This endpoints include:
 
 - Pools
 - Flavors
-- Capabilities
+- Notifications
 
 Adding support for these features would make developing applications with Zaqar
 easier.
@@ -38,7 +38,7 @@ v1.1,the proposed change is to add support for the following features:
 - flavor_update
 - flavor_list
 
-3. Capabilities
+3. Notifications
 
 Implementation
 ==============
@@ -62,19 +62,19 @@ Add support to:
 
 - pools
 - flavors
-- capabilities
+- notifications
 
 Add unit testing for:
 
 - pools
 - flavors
-- capabilities
+- notifications
 
 Add developers documentation for:
 
 - pools
 - flavors
-- capabilities
+- notifications
 
 Dependencies
 ============
