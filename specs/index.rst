@@ -11,3 +11,4 @@
    liberty/index
    backlog/index
    mitaka/index
+   newton/index
