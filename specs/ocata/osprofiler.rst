@@ -25,7 +25,7 @@ one trace per request affecting all involved services and build a tree of
 calls.
 
 More details on how OSProfiler works can be find in the
-`OSProfiler Readme <https://github.com/stackforge/osprofiler/blob/master/README.rst>`_
+`OSProfiler Readme <https://github.com/openstack/osprofiler/blob/master/README.rst>`_
 
 This is even more important for a project like Zaqar in which performance
 in communications is a key feature.
@@ -49,7 +49,7 @@ Proposed change
 
 The proposed change is to integrate the OSProfiler tool to Zaqar.
 According to the requirements for this addition detailed in
-`OSProfiler Readme <https://github.com/stackforge/osprofiler/blob/master/README.rst>`_,
+`OSProfiler Readme <https://github.com/openstack/osprofiler/blob/master/README.rst>`_,
 this shouldn't be a complex task. The steps required to do this are detailed
 in the `Work Items`_ section.
 
@@ -69,10 +69,12 @@ Assignee(s)
 
 Primary assignee: zhiyan
 
+Other assignee: wangxiyuan(wxy)
+
 Milestones
 ----------
 
-Target Milestone for completion: K-1
+Target Milestone for completion: O-2
 
 Work Items
 ----------
