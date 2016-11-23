@@ -2,3 +2,6 @@ pbr>=0.6,<1.0
 oslosphinx>=2.2.0.0a2
 sphinx>=1.1.2,<1.2
 yasfb>=0.5.1
+testrepository>=0.0.18
+testtools>=0.9.34
+flake8

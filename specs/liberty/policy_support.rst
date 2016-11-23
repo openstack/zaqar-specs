@@ -125,23 +125,6 @@ Dependencies
 ============
 
 * oslo.policy
-
-Testing
-=======
-
-* Unit tests
-* Manual testing
-
-Documentation Impact
-====================
-
-* Feature need to be documented
-* Add ``policy.json`` example
-* Add documentation and examples of how to tweak policy settings
-
-References
-==========
-
 * http://docs.openstack.org/developer/keystone/architecture.html#approach-to-authorization-policy
 * http://docs.openstack.org/developer/keystone/api/keystone.openstack.common.policy.html
 * http://docs.openstack.org/developer/keystone/configuration.html#keystone-api-protection-with-role-based-access-control-rbac

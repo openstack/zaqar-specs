@@ -203,21 +203,4 @@ Work Items
 Dependencies
 ============
 
-None
-
-Testing
-=======
-
-Both unit and Tempest tests need to be created to cover the code change.
-
-
-Documentation Impact
-====================
-
-The Zaqar API documentation will need to be updated to reflect the REST
-API changes.
-
-References
-==========
-
 _`Amazon SNS`: http://docs.aws.amazon.com/sns/latest/dg/SendMessageToHttp.html

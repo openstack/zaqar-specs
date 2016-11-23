@@ -40,6 +40,9 @@ v1.1,the proposed change is to add support for the following features:
 
 3. Notifications
 
+Alternatives
+------------
+
 Implementation
 ==============
 
