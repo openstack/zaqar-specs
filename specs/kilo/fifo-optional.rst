@@ -71,11 +71,13 @@ Work Items
 ----------
 
 * Allow driver to expose what features they support
-  * Each driver supporst a set of features and this set needs to be accessible from the upper layers
+    Each driver supporst a set of features and this set needs to be accessible
+    from the upper layers
 * Standardize the *supported* capabilities
-  * Make a list of supported capabilities
+    Make a list of supported capabilities
 * Add a way to pass capabilities down to the driver
-  * We can do this when the driver is initialized since we know what the capabilities are at that time.
+    We can do this when the driver is initialized since we know what the
+    capabilities are at that time.
 * Support both, FIFO and non-FIFO, post methods.
 
 

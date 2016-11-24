@@ -61,7 +61,7 @@ class TestTitles(testtools.TestCase):
 
     def _check_lines_wrapping(self, tpl, raw):
         for i, line in enumerate(raw.split("\n")):
-            if "http://" in line or "https://" in line:
+            if "http://" in line or "https://" in line or "/queues" in line:
                 continue
             self.assertTrue(
                 len(line) < 80,
@@ -108,6 +108,6 @@ class TestTitles(testtools.TestCase):
                 spec = docutils.core.publish_doctree(data)
                 titles = self._get_titles(spec)
                 self._check_titles(filename, titles)
-                #self._check_lines_wrapping(filename, data)
+                self._check_lines_wrapping(filename, data)
                 self._check_no_cr(filename, data)
                 self._check_trailing_spaces(filename, data)

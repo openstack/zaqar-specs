@@ -22,9 +22,9 @@ Zaqar needs to support policies as well.
 Problem description
 ===================
 
-Presently Zaqar is missing fine-grained permissions for actions. For example, it's
-hard to allow one user only can get message from a queue but not be able to
-post message to the queue, or something like that.
+Presently Zaqar is missing fine-grained permissions for actions. For example,
+it's hard to allow one user only can get message from a queue but not be able
+to post message to the queue, or something like that.
 
 
 Proposed change

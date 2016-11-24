@@ -153,7 +153,8 @@ Subscription request message example before implementation::
 
     {
         'action': 'subscription_create',
-        'headers': {'Client-ID': 31209ff3-ba03-4cec-b4ca-655f4899f8aa, 'X-Project-ID': superproject},
+        'headers': {'Client-ID': 31209ff3-ba03-4cec-b4ca-655f4899f8aa,
+                    'X-Project-ID': superproject},
         'body': {'queue_name': 'superqueue', 'ttl': 3600}
     }
 
@@ -162,7 +163,8 @@ it can also pass ``accept`` parameter explicitly::
 
     {
         'action': 'subscription_create',
-        'headers': {'Client-ID': 31209ff3-ba03-4cec-b4ca-655f4899f8aa, 'X-Project-ID': superproject},
+        'headers': {'Client-ID': 31209ff3-ba03-4cec-b4ca-655f4899f8aa,
+                    'X-Project-ID': superproject},
         'body': {'queue_name': 'superqueue', 'ttl': 3600, 'accept': 'json'}
     }
 

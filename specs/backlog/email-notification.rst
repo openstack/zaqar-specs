@@ -32,8 +32,8 @@ notifications.
 Proposed change
 ===============
 
-Add a new task driver under /notification/task, which will leverage the built-in
-/usr/sbin/sendmail command to send messages.
+Add a new task driver under /notification/task, which will leverage the
+built-in /usr/sbin/sendmail command to send messages.
 
 Proposed REST API request looks like::
 
@@ -50,13 +50,15 @@ The email notification driver will support the standard mailto protocol, that
 said, such as subject, cc and bcc could be a part of the 'subscriber' attribue.
 For example:
 
-mailto:someone@example.com?subject=This%20is%20the%20subject&cc=someone_else@example.com&body=This%20is%20the%20body
+mailto:someone@example.com?subject=This%20is%20the%20subject&cc=
+someone_else@example.com&body=This%20is%20the%20body
 
 Meanwhile, we can also support those email fields in the 'options' attribute.
 
-And to avoid spam, we can send a confirmation email firstly with a confirm_token,
-then by default the subcription is in 'inactive' status, until the email owner
-clicked the URL in the confirmation email. The URL will be like below::
+And to avoid spam, we can send a confirmation email firstly with a
+confirm_token, then by default the subcription is in 'inactive' status, until
+the email owner clicked the URL in the confirmation email. The URL will be like
+below::
 
     /v2/queues/{queue_name}/subscriptions?subscriber=mailto:fake@gmail.com&confirm_token=22c4f150358e4ed287fa51e050d7f024
 
@@ -68,9 +70,9 @@ Alternatives
 ------------
 
 From the design/architecture perspective, if we don't have an email driver for
-notification, that means we may need a email-sending-as-a-service to achieve the
-same goal. It doesn't make much sense to do that given we can easily do that
-by leveraging the mailto in Zaqar's notification service.
+notification, that means we may need a email-sending-as-a-service to achieve
+the same goal. It doesn't make much sense to do that given we can easily do
+that by leveraging the mailto in Zaqar's notification service.
 
 Data model impact
 -----------------
@@ -126,7 +128,8 @@ Testing
 =======
 
 * Unit tests
-* Functional test, like sending to $(whoami)@$(hostname) and then check with 'mail'.
+* Functional test, like sending to $(whoami)@$(hostname) and then check with
+  'mail'.
 * Manual testing
 
 Documentation Impact
