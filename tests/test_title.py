@@ -43,11 +43,13 @@ class TestTitles(testtools.TestCase):
         self.assertTrue(len(titles) >= 4,
                          "Titles count in '%s' doesn't match expected" % spec)
         problem = 'Problem description'
-        self.assertIn(problem, titles)
+        driver = 'Driver description'
+        self.assertTrue(problem in titles or driver in titles)
 
         proposed = 'Proposed change'
         self.assertIn(proposed, titles)
-        self.assertIn('Alternatives', titles[proposed], spec)
+        if problem in titles:
+            self.assertIn('Alternatives', titles[proposed], spec)
 
         impl = 'Implementation'
         self.assertIn(impl, titles)
