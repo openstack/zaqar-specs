@@ -73,7 +73,7 @@ Cap'n Proto.
 In the previous cycle we noted that the whereas MsgPack was the best candidate
 -considering overall performance, easiness to use, languages support,
 data structures support-, it doesn't have good support for Javascript. Using
-MsgPack would impose a significative contraint to the Zaqar use cases,
+MsgPack would impose a significative constraint to the Zaqar use cases,
 considering that many web applications nowaways are written with Javascript.
 For that reason, we decided to stick with JSON and maybe talk about a more
 performant serialization technology in a future change.
