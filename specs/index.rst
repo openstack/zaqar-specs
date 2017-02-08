@@ -13,3 +13,4 @@
    mitaka/index
    newton/index
    ocata/index
+   pike/index
