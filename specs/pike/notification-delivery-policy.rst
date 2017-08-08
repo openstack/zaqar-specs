@@ -132,10 +132,11 @@ model of retry policy should be like this::
   * retries_with_no_delay=3
   * minimum_delay_retries=3
   * minimum_delay=5
-  * maximum_delay=60
+  * maximum_delay=30
   * maximum_delay_retries=3
   * retry_backoff_function=linear
   * ignore_subscription_override=False
+  Those default values will be configurable in Queens.
 
 ..note::
 
