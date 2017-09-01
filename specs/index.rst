@@ -14,3 +14,4 @@
    newton/index
    ocata/index
    pike/index
+   queens/index
