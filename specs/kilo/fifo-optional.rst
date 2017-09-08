@@ -16,7 +16,7 @@ Make FIFO guarantee optional
 FIFO has been one of Zaqar's most wanted guarantees. Besides
 reliability, durability and other latency requirements, users have
 always requested FIFO to be there. This feature, however, has proven
-to be an issue for some scenarios that don't necesarily require it,
+to be an issue for some scenarios that don't necessarily require it,
 hence this proposal.
 
 https://blueprints.launchpad.net/zaqar/+spec/make-fifo-optional

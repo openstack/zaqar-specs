@@ -60,9 +60,9 @@ as well as a number of other actions (some of which, like sending email and
 webhooks, are similar to Zaqar's notifications).
 
 The missing link to build fully autonomous applications is for messages
-(potentially, but not neccessarily originating from the OpenStack cloud itself)
+(potentially, but not necessarily originating from the OpenStack cloud itself)
 on Zaqar queues to be able to trigger Mistral workflows (potentially, but not
-neccessarily calling other OpenStack APIs). This would give developers of cloud
+necessarily calling other OpenStack APIs). This would give developers of cloud
 applications an extremely flexible way of plugging together event-driven,
 application-specific, autonomous actions.
 
