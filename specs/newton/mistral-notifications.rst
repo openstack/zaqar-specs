@@ -128,8 +128,8 @@ passed through unmodified.
 While all the data is available to do a raw HTTP request, it is preferable if
 these calls are made through the python-mistralclient library.
 
-.. _Execution: http://docs.openstack.org/developer/mistral/developer/webapi/v2.html#executions
-.. _the one used by Aodh: http://docs.openstack.org/developer/aodh/architecture.html#trust-http
+.. _Execution: https://docs.openstack.org/mistral/latest/#executions
+.. _the one used by Aodh: https://docs.openstack.org/aodh/latest/#trust-http
 
 Alternatives
 ------------

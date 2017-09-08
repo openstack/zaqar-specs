@@ -16,7 +16,7 @@ Authorization Policy Support
 
 OpenStack components are supposed to check user privileges to perform any
 action. Generally these checks are role-based. See
-http://docs.openstack.org/developer/keystone/architecture.html#approach-to-authorization-policy.
+https://docs.openstack.org/keystone/latest/#approach-to-authorization-policy.
 Zaqar needs to support policies as well.
 
 Problem description
@@ -125,6 +125,6 @@ Dependencies
 ============
 
 * oslo.policy
-* http://docs.openstack.org/developer/keystone/architecture.html#approach-to-authorization-policy
-* http://docs.openstack.org/developer/keystone/api/keystone.openstack.common.policy.html
-* http://docs.openstack.org/developer/keystone/configuration.html#keystone-api-protection-with-role-based-access-control-rbac
+* https://docs.openstack.org/keystone/latest/#approach-to-authorization-policy
+* https://docs.openstack.org/keystone/latest/configuration/config-options.html#policy
+* https://docs.openstack.org/keystone/latest/#keystone-api-protection-with-role-based-access-control-rbac
