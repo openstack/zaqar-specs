@@ -8,3 +8,4 @@
 
    support-redis-as-mgmt-storage-backend
    support-more-backoff-functions
+   delayed-queues
