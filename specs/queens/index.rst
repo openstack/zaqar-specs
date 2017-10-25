@@ -9,3 +9,4 @@
    support-redis-as-mgmt-storage-backend
    support-more-backoff-functions
    delayed-queues
+   remove-pool-group-from-zaqar
