@@ -129,7 +129,7 @@ For sqlalchemy:
 
 * Migration strategy for Flavor and Pools table:
 
-   #. Query all the Pools, and then proccess every record as follows:
+   #. Query all the Pools, and then process every record as follows:
    #. Find Flavors.name where Flavors.pool_group = Pools.group
    #. Modify Pools.flavor = Flavors.name
 
