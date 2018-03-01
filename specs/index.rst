@@ -15,3 +15,4 @@
    ocata/index
    pike/index
    queens/index
+   rocky/index
