@@ -50,7 +50,8 @@ Basically, there are 3 scenarios:
 1. Normal message sent to delayed queue
 
    If a normal message without ``delay`` attribute sent to a delayed queue,
-   then the message will use the queue's default delay ``_default_message_delay``.
+   then the message will use the queue's default delay
+   ``_default_message_delay``.
 
 2. Message with attribute ``delay`` sent to delayed queue
 
@@ -62,10 +63,10 @@ Basically, there are 3 scenarios:
 
    A normal queue is a queue with the ``_default_message_delay`` value of 0.
    Whether the message is a normal message or a message with a ``delay``
-   attribute, it will not have a delay feature when it is sent to the normal queue.
-   Zaqar does not perform conditional filtering on the ``delay`` attribute
-   when get/claim messages. This means the delay feature does not affect the
-   performance of normal queue.
+   attribute, it will not have a delay feature when it is sent to the normal
+   queue. Zaqar does not perform conditional filtering on the ``delay``
+   attribute when get/claim messages. This means the delay feature does not
+   affect the performance of normal queue.
 
 Specific implementation steps:
 

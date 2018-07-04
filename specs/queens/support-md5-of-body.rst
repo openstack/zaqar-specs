@@ -34,28 +34,31 @@ Proposed change
 
 When user claim or get the messages, the checksum will be returned with message
 body together, So user can use it to verify that the message body is correct.
-Currently zaqar only support the checksum of the non-URL-encoded message body based
-on MD5 digests. We may support other algorithms in future versions, including SHA1,
-sha256, sha512, and so on. So, It is necessary to change the following:
+Currently zaqar only support the checksum of the non-URL-encoded message body
+based on MD5 digests. We may support other algorithms in future versions,
+including SHA1, sha256, sha512, and so on. So, It is necessary to change
+the following:
 
-1. Add new property named ``checksum`` for message. This property is a string type.
+1. Add new property named ``checksum`` for message. This property is
+   a string type.
 
-   When you send a message to queue, Zaqar will use the default checksum algorithm
-   MD5 to calculate the ``checksum`` value of the non-URL-encoded message body.
-   Finally Zaqar will store the value on the backend. Now the backend Mongodb,
-   Redis and Swift can be supported.
+   When you send a message to queue, Zaqar will use the default checksum
+   algorithm MD5 to calculate the ``checksum`` value of the non-URL-encoded
+   message body. Finally Zaqar will store the value on the backend.
+   Now the backend Mongodb, Redis and Swift can be supported.
 
-2. Return the property ``checksum`` for message when user claims or gets the message.
+2. Return the property ``checksum`` for message when user claims or gets
+   the message.
 
-   When user gets or claims the message, The API will return the k-v pair of ``checksum``
-   in the body of the message. The user can then use this value to verify that the
-   body of the newly retrieved message is correct or not.
+   When user gets or claims the message, The API will return the k-v pair of
+   ``checksum`` in the body of the message. The user can then use this value to
+   verify that the body of the newly retrieved message is correct or not.
 
 3. This feature is backward compatible.
 
-   For old messages that do not have the checksum attribute, the checksum will return
-   ``None`` for both ``claim`` and ``get`` operation. This feature will also transit
-   smoothly as the old messages gradually expire.
+   For old messages that do not have the checksum attribute, the checksum will
+   return ``None`` for both ``claim`` and ``get`` operation. This feature will
+   also transit smoothly as the old messages gradually expire.
 
 4. Add new data model for message body and queue on different backend.
 
