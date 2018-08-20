@@ -16,3 +16,4 @@
    pike/index
    queens/index
    rocky/index
+   stein/index
