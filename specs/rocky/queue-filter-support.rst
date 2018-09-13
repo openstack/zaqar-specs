@@ -35,7 +35,7 @@ Proposed change
 When queue listing, we add filter option in query string parameters
 like this ::
 
-GET /v2/queues?key1=value1&key2=value2&name=value3
+  GET /v2/queues?key1=value1&key2=value2&name=value3
 
 If metadata of queue and name is consistent with the filter, the queues will be
 listed to the user, otherwise the queue will be filtered.
@@ -44,8 +44,9 @@ to user.
 
 API Impact
 -----------
-Lists queues
-GET: /v2/queues?key1=value1&key2=value2
+Lists queues::
+
+  GET: /v2/queues?key1=value1&key2=value2
 
   RESPONSE CODE: 200
 

@@ -10,9 +10,9 @@
   For help with syntax, see http://sphinx-doc.org/rest.html
   To test out your formatting, see http://www.tele3.cz/jbar/rest/rest.html
 
-====================================
+=====================================
 Remove format constraint of client id
-====================================
+=====================================
 
 https://blueprints.launchpad.net/zaqar/+spec/remove-format-constraint-of-client-id
 
@@ -31,15 +31,15 @@ user id in LDAP as client id, but Zaqar doesn't allow this now.
 
 Proposed change
 ===============
-* Add Three config options::
+* Add Three config options:
 
-  # 'client_id_uuid_safe': Defines the format of client id, the value could be
-    "strict" or "off". "strict" means the format of client id must be uuid,
-    "off" means the restriction be removed. The default value is 'strict'.
-  # 'min_length_client_id': Defines the minimum length of client id if remove
-    the uuid restriction. Default value is 10.
-  # 'max_length_client_id': Defines the maximum length of client id if
-    remove the uuid restriction. Default value is 36.
+  #. 'client_id_uuid_safe': Defines the format of client id, the value could be
+     "strict" or "off". "strict" means the format of client id must be uuid,
+     "off" means the restriction be removed. The default value is 'strict'.
+  #. 'min_length_client_id': Defines the minimum length of client id if remove
+     the uuid restriction. Default value is 10.
+  #. 'max_length_client_id': Defines the maximum length of client id if
+     remove the uuid restriction. Default value is 36.
 
 * Will change the method 'require_client_id' in wsgi/helpers.py to support
   validating the different format of client id.

@@ -79,20 +79,21 @@ Finally, zaqar decides which subscribers the message should be sent to
 according to the following rules:
 
 * If the subscriber does not have any filter_policies, all messages will be
-sent to the subscriber.
+  sent to the subscriber.
 
-* If the message does not contain any filter_policies, it will not be sent to
-the subscriber which has filter_policies.
+* If the message does not contain any filter_policies, it will not be
+  sent to the subscriber which has filter_policies.
 
 * If the message and the subscriber's filter_policies have intersecting
-collections, the message will be sent to the subscriber.
+  collections, the message will be sent to the subscriber.
 
-* If the message and the subscriber both have filter_policies, but there is no
-intersection set, no message will be sent to the subscriber.
+* If the message and the subscriber both have filter_policies, but
+  there is no intersection set, no message will be sent to the
+  subscriber.
 
-* The relationship of the content in `order_placed` is *or*, it means that the
-message will be sent to the subscriptions that match anyone filters in
-`order_placed`.
+* The relationship of the content in `order_placed` is *or*, it means
+  that the message will be sent to the subscriptions that match anyone
+  filters in `order_placed`.
 
 Drawbacks
 ---------

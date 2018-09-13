@@ -399,12 +399,12 @@ flavor in the pool API. This can be compatible with the old way.
 
 #. Old Way:
 
-   *. configure group in pool API and in flavor API;
+   * configure group in pool API and in flavor API;
 
 #. New Way:
 
-   *. configure pool_list in flavor API
-   *. add a pool to flavor:
+   * configure pool_list in flavor API
+   * add a pool to flavor:
 
       #. method one: update pool_list in flavor API
       #. method two: config a pool with the flavor in pool API.
