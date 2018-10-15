@@ -16,27 +16,28 @@ Delete Message With Claim ID
 
 https://blueprints.launchpad.net/zaqar/+spec/delete-message-with-claim-id
 
-Delete Message with claim id means that when a user deletes a message, the message
-must be claimed. If you want to delete a message, you will have to use both message
-id and claim id. This can improve the security of the message.
+Delete Message with claim id means that when a user deletes a message, the
+message must be claimed. If you want to delete a message, you will have to use
+both message id and claim id. This can improve the security of the message.
 
 Problem description
 ===================
 
-Currently, any client who knows the message ID can delete the message if it not be
-claimed. It could cause some unexpected problems. A better way to delete a message
-is make sure the message is deleted by the client who is claiming the message.
-Amazon SQS use receipt handler to delete a message[1]. Zaqar can use claim id and
-message id to delete messages.
+Currently, any client who knows the message ID can delete the message if it not
+be claimed. It could cause some unexpected problems. A better way to delete a
+message is make sure the message is deleted by the client who is claiming the
+message. Amazon SQS use receipt handler to delete a message[1]. Zaqar can use
+claim id and message id to delete messages.
 
 Proposed change
 ===============
 
-Add a new configuration item named ``message_delete_with_claim_id``, default value
-is ``False``, means it is backwards compatible. You can modify this configuration
-item to decide whether to turn on the switch. If you change it to ``True``, you
-need to forcibly carry the claim id when delete messages. If the claim ID is invalid,
-the message can not be deleted. You must re-claim the messages, and then delete it.
+Add a new configuration item named ``message_delete_with_claim_id``, default
+value is ``False``, means it is backwards compatible. You can modify this
+configuration item to decide whether to turn on the switch. If you change it to
+``True``, you need to forcibly carry the claim id when delete messages. If the
+claim ID is invalid, the message can not be deleted. You must re-claim the
+messages, and then delete it.
 
 ..note::
 
