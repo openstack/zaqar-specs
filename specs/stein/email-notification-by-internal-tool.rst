@@ -31,7 +31,7 @@ from which ``smtp_command`` config option provides to send email subscription.
 
 A email template file will be added as well. Some parameters in the file should
 be configured firstly before using. Those parameters include something like
-smtp service account/passwrod, smtp service address and so on. These value
+smtp service account/password, smtp service address and so on. These value
 should come from config options as well.
 
 The email body in the template file should be configured as well. Currently,
