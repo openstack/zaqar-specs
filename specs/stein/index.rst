@@ -9,3 +9,4 @@
    email-notification-by-internal-tool
    delete-message-with-claim-id
    introduce-topic-resource-for-notification
+   remove-pool-group-totally
