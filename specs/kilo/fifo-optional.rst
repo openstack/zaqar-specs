@@ -84,7 +84,7 @@ Work Items
 Dependencies
 ============
 
-* https://review.openstack.org/#/c/126531/
+* https://review.opendev.org/#/c/126531/
 
 .. note::
 

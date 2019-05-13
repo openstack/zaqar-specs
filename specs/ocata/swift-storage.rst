@@ -90,7 +90,7 @@ Work Items
 Dependencies
 ============
 
-- Depend on Swift fix for if-none-match: https://review.openstack.org/395582
+- Depend on Swift fix for if-none-match: https://review.opendev.org/395582
 
 .. note::
 

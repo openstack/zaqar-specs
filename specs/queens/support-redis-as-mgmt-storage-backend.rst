@@ -228,7 +228,7 @@ Work Items
 Dependencies
 ============
 
-[1]:https://review.openstack.org/#/c/345133/
+[1]:https://review.opendev.org/#/c/345133/
 
 Testing
 =======
