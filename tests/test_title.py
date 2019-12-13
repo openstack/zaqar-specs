@@ -41,7 +41,7 @@ class TestTitles(testtools.TestCase):
 
     def _check_titles(self, spec, titles):
         self.assertTrue(len(titles) >= 4,
-                         "Titles count in '%s' doesn't match expected" % spec)
+                        "Titles count in '%s' doesn't match expected" % spec)
         problem = 'Problem description'
         driver = 'Driver description'
         self.assertTrue(problem in titles or driver in titles)
@@ -84,7 +84,7 @@ class TestTitles(testtools.TestCase):
     def test_template(self):
         # NOTE (e0ne): adding 'template.rst' to ignore dirs to exclude it from
         # os.listdir output
-        ignored_dirs = {'template.rst', 'api',}
+        ignored_dirs = {'template.rst', 'api'}
 
         files = ['specs/template.rst']
 
