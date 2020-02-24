@@ -200,7 +200,7 @@ Dependencies
 ============
 
 We won't be able to pass the message ID until
-https://review.openstack.org/#/c/276968/ or something equivalent merges.
+https://review.opendev.org/#/c/276968/ or something equivalent merges.
 However, since it can be added to the Mistral environment later without
 rewriting any existing workflows (to declare a new input), this is in no way a
 blocker.

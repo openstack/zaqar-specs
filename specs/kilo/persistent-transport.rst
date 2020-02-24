@@ -123,7 +123,7 @@ the `WebSockets wiki`_.
 Dependencies
 ============
 
-* https://review.openstack.org/#/c/122425/
+* https://review.opendev.org/#/c/122425/
 * https://blueprints.launchpad.net/zaqar/+spec/cross-transport-api-spec
 
 .. note::

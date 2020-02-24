@@ -54,7 +54,7 @@ this shouldn't be a complex task. The steps required to do this are detailed
 in the `Work Items`_ section.
 
 Main functional change for Zaqar server:
-https://review.openstack.org/#/c/141356/
+https://review.opendev.org/#/c/141356/
 
 Alternatives
 ------------
