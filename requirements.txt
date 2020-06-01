@@ -1,6 +1,6 @@
 pbr>=0.6,<1.0
-openstackdocstheme
-sphinx!=1.6.6,!=1.6.7,!=2.1.0,>=1.6.2;python_version>='3.4' # BSD
+openstackdocstheme>=2.2.1 # Apache-2.0
+sphinx>=2.0.0,!=2.1.0 # BSD
 yasfb>=0.8.0
 testrepository>=0.0.18
 testtools>=0.9.34
