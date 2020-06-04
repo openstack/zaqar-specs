@@ -31,7 +31,8 @@ or hacker attack.
 Proposed change
 ===============
 
-1. Add one new metadata in queue object that will indicate how to encrypt messages:
+1. Add one new metadata in queue object that will indicate how to
+   encrypt messages:
 
 #. "_enable_encrypt_messages=true/false" : this will tell Zaqar whether encrypt
    messages before storing them into backends or not.
@@ -46,33 +47,39 @@ Proposed change
    encrypt the message by using public key and return the encrypted messages to
    user.
 
-4. About the algorithms, in V cycle, Zaqar will introduce the AES-256 encryption
-   at first. In next cycles, Zaqar can suppot asymmetric encryption to let user
-   upload public key and keep the private key by their own.
+4. About the algorithms, in V cycle, Zaqar will introduce the AES-256
+   encryption at first. In next cycles, Zaqar can suppot asymmetric
+   encryption to let user upload public key and keep the private key
+   by their own.
 
 .. note::
 
    About the option of encryption algorithms and keys, Zaqar would support
    specify them throught more metadatas of queues, but it will be done in next
    serveral cycles. In Victoria, we will choose one algorithm (like AES256) to
-   support and support to storage the keys by Zaqar itself or other service like
-   Barbican.
+   support and support to storage the keys by Zaqar itself or other
+   service like Barbican.
 
 API Impact
 -----------
-Create queue list
-POST: /v2/queues/queue_name
 
-  RESPONSE CODE: 200
-  REQUEST BODY:
-  {
-    "_enable_encrypt_messages": true
-  }
+Create queue list:
+
+.. code-block::
+
+  POST: /v2/queues/queue_name
+
+    RESPONSE CODE: 200
+    REQUEST BODY:
+    {
+      "_enable_encrypt_messages": true
+    }
 
 Drawbacks
 ---------
 
-The ecryption algorithms will impact the performance of storing messages into backends
+The ecryption algorithms will impact the performance of storing
+messages into backends
 and getting the messages from the queue.
 
 This depends on which kind of encryption algorithms we choose and support.

@@ -38,15 +38,18 @@ return the amount of queues in response body like "count=100".
 
 API Impact
 -----------
-Query queue list
-GET: /v2/queues?with_count=true
+Query queue list:
 
-  RESPONSE CODE: 200
-  RESPONSE BODY:
-  {
-    "count": 100,
-    "queues": [...]
-  }
+.. code-block::
+
+  GET: /v2/queues?with_count=true
+
+    RESPONSE CODE: 200
+    RESPONSE BODY:
+    {
+      "count": 100,
+      "queues": [...]
+    }
 
 Drawbacks
 ---------

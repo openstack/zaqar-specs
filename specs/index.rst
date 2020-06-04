@@ -17,3 +17,5 @@
    queens/index
    rocky/index
    stein/index
+   ussuri/index
+   victoria/index
