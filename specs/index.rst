@@ -19,3 +19,4 @@
    stein/index
    ussuri/index
    victoria/index
+   wallaby/index
