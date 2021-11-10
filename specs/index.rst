@@ -20,3 +20,5 @@
    ussuri/index
    victoria/index
    wallaby/index
+   xena/index
+   yoga/index
